@@ -180,6 +180,7 @@ table{
     border-collapse:collapse;
     border: 1px solid black;
     box-shadow: -2px 2px 5px black;
+    font-size: 1.5vw;
 }
 
 th img {
