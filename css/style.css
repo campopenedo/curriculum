@@ -23,7 +23,6 @@ header {
     display:flex;
     background-color: var(--black);
     align-items: center;
-    padding-left: 10px;
     border-bottom: 3px solid var(--yellow);
 }
 
@@ -41,7 +40,6 @@ header {
     color: var(--white);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 0.5px;
-    padding-left:10px;
     font-size: 1.3vw;
 }
 
@@ -222,14 +220,14 @@ main h3 img {
 }
 
 #galego {
-    list-style-image: url(/imagenes/galego.png);
+    list-style-image: url(../imagenes/galego.png);
 }
 
 #espanhol {
-    list-style-image: url(/imagenes/español.png);
+    list-style-image: url(../imagenes/espanhol.png);
 }
 #ingles {
-    list-style-image: url(/imagenes/england.png);
+    list-style-image: url(../imagenes/england.png);
 }
 
 main a {
@@ -239,4 +237,66 @@ main a {
 
 .colegio {
   font-style: italic;
+}
+
+
+@media screen and (max-width: 550px) {
+
+ header {
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+
+ header img#foto-autor {
+     width: 50vw;
+     border-radius: 50vw;
+     margin: 10vw;
+ }
+
+ header #datos-personales {
+     font-size: 4vw;
+     margin-bottom: 10vw
+ }
+
+ header #datos-personales > p {
+     display: none;
+ }
+
+ header #datos-personales hr {
+     display: none;
+ }
+
+ aside {
+     display: none;
+ }
+
+ main {
+     display: flex;
+ }
+ 
+ #academicos img {
+     display: none;
+ }
+
+ #academicos h3 {
+     font-size: 10vw;
+ }
+
+ #academicos li {
+     font-size: 5vw;
+     margin: 2vw 0;   
+ }
+
+ table {
+     font-size: 4vw;
+     text-align: center;
+     margin: 1vw;
+ }
+
+ .anhos {
+     display: none;
+ }
+
 }
